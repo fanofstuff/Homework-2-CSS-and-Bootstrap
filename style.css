@@ -3,11 +3,24 @@
     background-size: cover;
 }
 
+header {
+    background-color: #59aaa5;
+    margin: 0; 
+    padding: 40px;
+    text-align: center;  
+    position: relative; 
+}
+
+header h1 {
+    font-family: serif;
+    color: white; 
+    font-weight: bold; 
+}
 
 .container {
     background-color: white;
     margin-top: 100px; 
-    margin: 50px auto; 
+    margin: 20px auto; 
     padding: 20px; 
     padding-top: 30px; 
     border: 1px solid #e7e7e7; 
@@ -17,40 +30,26 @@
 ul {
     list-style: none;
     margin: 0; 
-    padding: 10px; 
+    padding: 0px; 
     overflow: hidden;
     background-color: white;
+    text-align: center;  
 }
 
 li {
-    /* float: right;  */
-    padding: 0 7px; 
-    position: relative; 
     display: inline-block; 
+    padding: 10px 7px; 
+    position: relative; 
 }
-/* 
-li:after {
-    content: ""; 
-    background: #f3f3f3; 
-    position: absolute; 
-    bottom: 15px; 
-    left: 0; 
-    height: 30%; 
-    width: 1px; 
-}
-
-li:last-child:after {
-    height: 0%; 
-} */
 
 li:not(:last-child)::after {
     content:""; 
     border: 1px solid #f3f3f3; 
-    border-width: 1px 1px 0 0; 
+    border-width: 0px 1.5px 0 0; 
     position: absolute; 
-    right: -3px; 
-    top: 0; 
-    height: 100%; 
+    right: 0px; 
+    top: 25px; 
+    height: 30%; 
 }
 
 li > a {
@@ -61,17 +60,17 @@ li > a {
     text-decoration: none;
 }
 
-h1 {
+main > h1 {
     color: #59aaa5; 
     font-family: serif; 
     font-weight: bold; 
     padding: 10px; 
 }
 
-hr {
-    border-top: 2px solid #dddddd; 
-    
-}
+/* hr {
+    border-top: 3px solid #dddddd; 
+    width: 93%; 
+} */
 
 #ugly-cat {
     max-width: 250px;  
@@ -83,10 +82,22 @@ p {
 }
 
 img {
+    border-top: 3px solid #dddddd; 
     display: block; 
-    max-width: 100%; 
+    min-width: 500px; 
     height: auto; 
-    padding-right: 20px; 
+    padding: 30px 0; 
+}
+
+footer {
+    background-color: #666666;
+    margin: 0; 
+    padding: 30px;
+    padding-top: 35px;  
+    text-align: center;  
+    position: relative;   
+    border-top: 8px solid #59aaa5; 
+    color: #c3c4b4; 
 }
 
 @media screen and (min-width: 640px) {
