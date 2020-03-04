@@ -17,19 +17,23 @@ header h1 {
     font-weight: bold; 
 }
 
+nav {
+    border-bottom: 1px solid #c3c4b4; 
+}
+
 .container {
     background-color: white;
     /* margin-top: 100px;  */
     margin: 20px auto; 
     margin-bottom: 200px; 
-    padding: 20px; 
+    padding: 30px; 
     padding-top: 30px; 
-    border: 1px solid #e7e7e7; 
+    border: 1px solid #c3c4b4; 
     max-width: 95%; 
 }
 
 ul {
-    /* list-style: none; */
+    list-style: none;
     margin: 0; 
     padding: 0px; 
     overflow: hidden;
@@ -39,8 +43,9 @@ ul {
 
 li {
     display: inline-block; 
-    padding: 10px 7px; 
+    padding: 7px; 
     position: relative; 
+    font-size: 20px; 
 }
 
 li:not(:last-child)::after {
@@ -56,31 +61,30 @@ li:not(:last-child)::after {
 li > a {
     display: block; 
     color: #a79ea2; 
-    /* text-align: center;  */
+    text-align: center; 
     padding: 14px 16px; 
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
 main > h1 {
     color: #59aaa5; 
     font-family: serif; 
     font-weight: bold; 
-    padding: 10px; 
+    padding: 20px 10px; 
     border-bottom: 3px solid #dddddd; 
 }
 
 #ugly-cat {
     float: left; 
-    /* border-top: 3px solid #dddddd;  */
     display: block; 
     width: 100%; 
-    height: auto; 
     padding: 10px 0; 
     margin-right: 20px; 
 }
 
 p {
     font-size: 20px; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 button {
@@ -108,17 +112,28 @@ footer {
     overflow: hidden; 
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 768px) {
     #ugly-cat {
         width: 50%; 
     }
 
     ul {
         text-align: right;
+        padding: 22px; 
+        /* margin-bottom: 20px;  */
     }
+
+    header {
+        text-align: left; 
+        margin-left: 2.75%; 
+        position: absolute; 
+        top: 0; 
+        padding: 30px 20px; 
+    }
+
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 980px) {
 
     #ugly-cat {
         width: 35%; 
@@ -128,6 +143,10 @@ footer {
         float: left; 
         margin-left: 5%; 
     }
+
+    header {
+        margin-left: 5%; 
+    }    
+
+
 }
-
-
