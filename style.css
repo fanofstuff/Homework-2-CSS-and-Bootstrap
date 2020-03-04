@@ -1,24 +1,3 @@
-/* taken from https://stackoverflow.com/a/47753600/3466464
-@import "bootstrap/functions";
-@import "bootstrap/variables";
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 640px,
-  md: 768px,
-  lg: 980px,
-  xl: 1280px  // <-- modified!
-);
-
-$container-max-widths: (
-  sm: 640px,
-  md: 768px,
-  lg: 980px,
-  xl: 1220px  // <-- modified!
-);
-
-@import "bootstrap"; */
-
 .parchment-bg {
     background-image: url("https://www.southworth.com/shop/system/html/popup_parch_gray-a7e816b3.jpg");
     background-size: cover;
@@ -26,10 +5,8 @@ $container-max-widths: (
 
 header {
     background-color: #59aaa5;
-    margin: 0; 
     padding: 30px;
     text-align: center;  
-    position: relative; 
 }
 
 header h1 {
@@ -42,20 +19,10 @@ nav {
     border-bottom: 1px solid #c3c4b4; 
 }
 
-.container, .container-fluid {
-    background-color: white;
-    margin: 20px auto; 
-    margin-bottom: 200px; 
-    padding: 30px; 
-    border: 1px solid #c3c4b4; 
-    max-width: 95%; 
-}
-
 ul {
     list-style: none;
     margin: 0; 
     padding: 0px; 
-    overflow: hidden;
     background-color: white;
     text-align: center;  
 }
@@ -80,36 +47,41 @@ li:not(:last-child)::after {
 li > a {
     display: block; 
     color: #a79ea2; 
-    text-align: center; 
     padding: 14px 10px; 
-    text-decoration: none;
+}
+
+.container, .container-fluid {
+    background-color: white;
+    margin: 30px 3%; 
+    margin-bottom: 200px; 
+    padding: 30px; 
+    border: 1px solid #c3c4b4; 
+    width: auto; 
+    max-width: 750px; 
+    margin-right: 15px auto; 
 }
 
 main > h1 {
     color: #59aaa5; 
     font-family: serif; 
     font-weight: bold; 
-    padding: 20px 0px; 
+    padding-bottom: 20px; 
     border-bottom: 3px solid #dddddd; 
     margin-bottom: 20px; 
 }
 
 #ugly-cat {
-    float: left; 
-    display: block; 
-    width: 100%; 
     padding: 10px 0; 
-    margin-right: 20px; 
-}
-
-.port-img { 
-    margin: 30px 0; 
-    width: 100%; 
 }
 
 p {
     font-size: 20px; 
     font-family: Arial, Helvetica, sans-serif; 
+}
+
+.port-img { 
+    margin: 20px 0; 
+    width: 100%; 
 }
 
 button {
@@ -138,9 +110,9 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-    #ugly-cat {
+    /* #ugly-cat {
         width: 50%; 
-    }
+    } */
 
     ul {
         text-align: right;
@@ -155,25 +127,13 @@ footer {
         padding: 30px 20px; 
     }
 
-    .container, .container-fluid {
-        margin-top: 35px; 
-    }
 
 }
 
 @media only screen and (min-width: 980px) {
 
-    #ugly-cat {
+    /* #ugly-cat {
         width: 35%; 
     }
-    .container, .container-fluid {
-        max-width: 70%; 
-        margin-left: 5%; 
-        margin-top: 40px; 
-    }
-
-    header {
-        margin-left: 5%; 
-    }    
-
+ */
 }
