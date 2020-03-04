@@ -83,17 +83,16 @@ main > h1 {
     margin-right: 20px; 
 }
 
-#main-content-section {
-    width: 100%; 
-    display: block; 
-}
 
 .port-img { 
-    /* padding: 15px;  */
-    width: 100%;  
-    display: block; 
-    margin: 50px 15px; 
+    margin: 20px 15px; 
+    overflow: hidden; 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%; 
+    display: block;
 }
+
 
 p {
     font-size: 20px; 
@@ -125,7 +124,7 @@ footer {
     overflow: hidden; 
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     #ugly-cat {
         width: 50%; 
     }
@@ -149,14 +148,13 @@ footer {
 
 }
 
-@media screen and (min-width: 980px) {
+@media only screen and (min-width: 980px) {
 
     #ugly-cat {
         width: 35%; 
     }
     .container, .container-fluid {
-        max-width: 65%; 
-        float: left; 
+        max-width: 70%; 
         margin-left: 5%; 
         margin-top: 40px; 
     }
