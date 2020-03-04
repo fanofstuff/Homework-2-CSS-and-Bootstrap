@@ -6,7 +6,7 @@
 header {
     background-color: #59aaa5;
     margin: 0; 
-    padding: 40px;
+    padding: 30px;
     text-align: center;  
     position: relative; 
 }
@@ -19,8 +19,9 @@ header h1 {
 
 .container {
     background-color: white;
-    margin-top: 100px; 
+    /* margin-top: 100px;  */
     margin: 20px auto; 
+    margin-bottom: 200px; 
     padding: 20px; 
     padding-top: 30px; 
     border: 1px solid #e7e7e7; 
@@ -28,7 +29,7 @@ header h1 {
 }
 
 ul {
-    list-style: none;
+    /* list-style: none; */
     margin: 0; 
     padding: 0px; 
     overflow: hidden;
@@ -55,9 +56,9 @@ li:not(:last-child)::after {
 li > a {
     display: block; 
     color: #a79ea2; 
-    text-align: center; 
+    /* text-align: center;  */
     padding: 14px 16px; 
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 main > h1 {
@@ -65,28 +66,31 @@ main > h1 {
     font-family: serif; 
     font-weight: bold; 
     padding: 10px; 
+    border-bottom: 3px solid #dddddd; 
 }
 
-/* hr {
-    border-top: 3px solid #dddddd; 
-    width: 93%; 
-} */
-
 #ugly-cat {
-    max-width: 250px;  
     float: left; 
+    /* border-top: 3px solid #dddddd;  */
+    display: block; 
+    width: 100%; 
+    height: auto; 
+    padding: 10px 0; 
+    margin-right: 20px; 
 }
 
 p {
     font-size: 20px; 
 }
 
-img {
-    border-top: 3px solid #dddddd; 
-    display: block; 
-    min-width: 500px; 
-    height: auto; 
-    padding: 30px 0; 
+button {
+    background-color: #59aaa5;
+    color: white; 
+    height: 40px; 
+    width: 80px; 
+    border: 0; 
+    box-shadow: 0; 
+    border-radius: 0; 
 }
 
 footer {
@@ -95,16 +99,35 @@ footer {
     padding: 30px;
     padding-top: 35px;  
     text-align: center;  
-    position: relative;   
+    position: fixed;   
+    bottom: 0; 
+    width: 100%; 
     border-top: 8px solid #59aaa5; 
     color: #c3c4b4; 
+    /* not totally certain if necessary, but it doesn't break anything right now, so I'm keeping it */
+    overflow: hidden; 
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 641px) {
+    #ugly-cat {
+        width: 50%; 
+    }
 
+    ul {
+        text-align: right;
+    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
+    #ugly-cat {
+        width: 35%; 
+    }
+    .container {
+        max-width: 65%; 
+        float: left; 
+        margin-left: 5%; 
+    }
 }
+
 
