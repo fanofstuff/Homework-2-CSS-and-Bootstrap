@@ -1,3 +1,24 @@
+/* taken from https://stackoverflow.com/a/47753600/3466464
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 768px,
+  lg: 980px,
+  xl: 1280px  // <-- modified!
+);
+
+$container-max-widths: (
+  sm: 640px,
+  md: 768px,
+  lg: 980px,
+  xl: 1220px  // <-- modified!
+);
+
+@import "bootstrap"; */
+
 .parchment-bg {
     background-image: url("https://www.southworth.com/shop/system/html/popup_parch_gray-a7e816b3.jpg");
     background-size: cover;
@@ -23,11 +44,9 @@ nav {
 
 .container, .container-fluid {
     background-color: white;
-    /* margin-top: 100px;  */
     margin: 20px auto; 
     margin-bottom: 200px; 
     padding: 30px; 
-    padding-top: 30px; 
     border: 1px solid #c3c4b4; 
     max-width: 95%; 
 }
@@ -83,16 +102,10 @@ main > h1 {
     margin-right: 20px; 
 }
 
-
 .port-img { 
-    margin: 20px 15px; 
-    overflow: hidden; 
-    background-size: cover; 
-    background-position: center; 
+    margin: 30px 0; 
     width: 100%; 
-    display: block;
 }
-
 
 p {
     font-size: 20px; 
@@ -162,6 +175,5 @@ footer {
     header {
         margin-left: 5%; 
     }    
-
 
 }
