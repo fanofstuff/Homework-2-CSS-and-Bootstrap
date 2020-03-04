@@ -71,7 +71,8 @@ main > h1 {
 }
 
 #ugly-cat {
-    padding: 10px 0; 
+    padding: 10px 20px 10px 0; 
+    float: left; 
 }
 
 p {
@@ -110,9 +111,9 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-    /* #ugly-cat {
+    #ugly-cat {
         width: 50%; 
-    } */
+    }
 
     ul {
         text-align: right;
@@ -132,8 +133,8 @@ footer {
 
 @media only screen and (min-width: 980px) {
 
-    /* #ugly-cat {
+    #ugly-cat {
         width: 35%; 
     }
- */
+
 }
