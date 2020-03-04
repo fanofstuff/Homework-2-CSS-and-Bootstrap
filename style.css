@@ -5,7 +5,7 @@
 
 header {
     background-color: #59aaa5;
-    padding: 30px;
+    padding: 20px;
     text-align: center;  
 }
 
@@ -19,6 +19,10 @@ nav {
     border-bottom: 1px solid #c3c4b4; 
 }
 
+.form-control {
+    border-radius: 0px; 
+}
+
 ul {
     list-style: none;
     margin: 0; 
@@ -29,7 +33,7 @@ ul {
 
 li {
     display: inline-block; 
-    padding: 7px 0px; 
+    padding: 0px 0px; 
     position: relative; 
     font-size: 20px; 
 }
@@ -39,8 +43,8 @@ li:not(:last-child)::after {
     border: 1px solid #f3f3f3; 
     border-width: 0px 1.5px 0 0; 
     position: absolute; 
-    right: 0px; 
-    top: 25px; 
+    right: -3px; 
+    top: 21px; 
     height: 30%; 
 }
 
@@ -71,7 +75,8 @@ main > h1 {
 }
 
 #ugly-cat {
-    padding: 10px 20px 10px 0; 
+    margin: 10px 20px 10px 0; 
+    width: 550px; 
     float: left; 
 }
 
@@ -125,7 +130,7 @@ footer {
         margin-left: 2.75%; 
         position: absolute; 
         top: 0; 
-        padding: 30px 20px; 
+        padding: 23px 20px; 
     }
 
 
