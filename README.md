@@ -19,7 +19,8 @@ First, you will use the Bootstrap CSS Framework to recreate your portfolio. How 
 
 * The Bootstrap portfolio should minimize the use of media queries.
 
-(Background image: gray parchment (or thereabouts), choose some similar images, etc. Mimic as well as we can, essentially. Lorem is allowed. Color should come from a color picker tool. Titles should use serif. "Your name" can be our name. Use one style.css for all three sheets. Change button style to rectangular, not rounded. Message section under Contact = text area. Button doesn't actually need to submit... though it should probably clear. Images on Portfolio should just show that we can stack images. Choose images as we'd like, but should be same size. May or may not be links. Probably should be. Bars are overlays on top of image. )
+
+1. Change form style to rectangular, not rounded. 
 
 
 ### Hints
